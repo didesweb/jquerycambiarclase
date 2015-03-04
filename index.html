@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<!-- Didesweb -->  
+<!-- Diseño y desarrollo web -->  
+<!-- http://didesweb.com/-->  
+<!-- Este obra está protegida bajo licencia Creative Commons Attribution --> 
+<html lang="es">
+<head>
+<title>Didesweb, cambiar la clase de un elemento con jQuery</title>
+<meta charset="utf-8">
+ <style>
+     .nuevaclase {
+         background: #DEDEDE;
+         color: #d78500;
+         text-decoration: underline;
+     }
+ </style>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script>
+     $(document).ready(function(){
+         $("a").mouseover(function(event){
+            $("#didesweb").addClass("nuevaclase");
+     });
+ $("a").mouseout(function(event){
+        $("#didesweb").removeClass("nuevaclase");
+     });
+ });
+ </script>
+</head>
+<body>
+	<h1>Didesweb, cambiar la clase de un elemento con jQuery</h1>
+     <p><a href="#">Situa el ratón sobre este enlace</a></p>
+     <p id="didesweb">Este es el elemento sobre el que se ejecuta la función</p>
+</body>
+</html>
